@@ -31,36 +31,43 @@
 \end{frame}
 
 \begin{frame}
+%-------------------- Wo muss QA betrieben werden ?------------------------
 \frametitle{QA ja, aber wo?}
-\begin{block}<1->{nach dem Sprint}
+\begin{block}<1->{\color<4->{red}{nach dem Sprint}}
 	\invisible<-2>{
 		nicht Möglich da: 
 		\begin{itemize}
-			\item nach einem Sprint ein fertiges Inkrement vorhanden sein soll
+			\item nach einem Sprint ein fertiges Inkrement vorhanden sein muss
 		\end{itemize}
 	}
 \end{block}
 
-\begin{block}<2->{Wärend des Sprintes}
-	\invisible<-3>{
-		theoretisch Möglich
+\begin{block}<2->{\color<6->{green}{Wärend des Sprintes}}
+	\invisible<-4>{
+		nach den Regeln von Scrum möglich
 	}
 \end{block}
-\only<4>{}	% damit gestoppt wird bevor es zur nächsten Folie geht
+\only<5>{}	% damit gestoppt wird bevor es zur nächsten Folie geht
+%--------------------------------------------------------------------------
 \end{frame}
 
 \begin{frame}
-\frametitle{Ansprüche an das Qualitätsmanagment}
+%---------------------- Ansprüche an das Testen ---------------------------
+\frametitle{Ansprüche an das Testen}
 \begin{itemize}
 	\item schnelles Testen
 	\begin{itemize}
 		\item automatisiert
 	\end{itemize}
 \end{itemize}
+%--------------------------------------------------------------------------
 \end{frame}
 
 \begin{frame}
-Bild wie Qualitätssicherung in einem Sprint ablaufen könnte
+%---------------- Beispiel von Testen in einem Sprint ---------------------
+\frametitle{QA in einem Sprint}
+\includegraphics[scale=0.6]{./presGraphics/sprintQA}
+%--------------------------------------------------------------------------
 \end{frame}
 
 \end{document}

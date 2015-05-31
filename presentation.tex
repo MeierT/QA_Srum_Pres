@@ -23,10 +23,13 @@
 \begin{frame}
 %----------------------- Scrum allgemein ----------------------------------
 \frametitle{Scrum - Schritte}
+\begin{figure}
 \only<1>{\includegraphics[scale=0.6]{./presGraphics/scrum01}}
 \only<2>{\includegraphics[scale=0.6]{./presGraphics/scrum02}}
 \only<3>{\includegraphics[scale=0.6]{./presGraphics/scrum03}}
 \only<4>{\includegraphics[scale=0.6]{./presGraphics/scrum}}
+\caption{\url{http://www.plazz-entertainment.com/wp-content/uploads/2013/07/flow.png}}
+\end{figure}
 %--------------------------------------------------------------------------
 \end{frame}
 
@@ -53,20 +56,34 @@
 
 \begin{frame}
 %---------------------- Ansprüche an das Testen ---------------------------
-\frametitle{Ansprüche an das Testen}
-\begin{itemize}
-	\item schnelles Testen
+\frametitle{Testen}
+\begin{block}{Ansprüche an das Testen / den Tester}
 	\begin{itemize}
-		\item automatisiert
+		\item testfähiger Code kann erst ab dem 3. Tag erwartet werden
+		\begin{itemize}
+			\item Testfälle definieren, bzw Vorbereitung der Tests an den ersten Tagen
+		\end{itemize}
+		\item das Sprintziel soll nicht gefärdet werden: schnelles Testen
+		\begin{itemize}
+			\item automatisiert
+		\end{itemize}
 	\end{itemize}
-\end{itemize}
+\end{block}
+\begin{block}{Gefahren wenn man Testen}
+	\begin{itemize}
+		\item Viel Code in letzter Minute fertigstellen, fürt zu "keine Zeit für QA"
+	\end{itemize}
+\end{block}
 %--------------------------------------------------------------------------
 \end{frame}
 
 \begin{frame}
 %---------------- Beispiel von Testen in einem Sprint ---------------------
 \frametitle{QA in einem Sprint}
-\includegraphics[scale=0.6]{./presGraphics/sprintQA}
+\begin{figure}
+	\includegraphics[scale=0.6]{./presGraphics/sprintQA}
+	\caption{\url{http://www.uploads.pnsqc.org/2013/papers/t-024_Wysopal_paper.pdf}, Seite 9}
+\end{figure}
 %--------------------------------------------------------------------------
 \end{frame}
 

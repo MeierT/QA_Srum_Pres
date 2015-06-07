@@ -1,0 +1,90 @@
+\documentclass{beamer}
+
+\usepackage[english, ngerman]{babel}	% Englische und deutsche Rechtschreibung
+\usepackage[utf8]{inputenc}				% Umlaute-Darstellung unter Linux
+
+\usecolortheme[]{default}
+
+%-------------------- Titelblattinformationen ----------------------------
+\title{Qualitätssicherung in einer Scrum basierten Entwicklungsumgebung}
+\subtitle{Kurzvortrag}
+\author{David Liebemann, Lucas Küntzer, Tobias Meier}
+\institute{Fachhochschule Trier}
+%--------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{frame}
+%------------------------- Titelblatt -------------------------------------
+\titlepage
+%--------------------------------------------------------------------------
+\end{frame}
+
+\begin{frame}
+%----------------------- Scrum allgemein ----------------------------------
+\frametitle{Scrum - Schritte}
+\begin{figure}
+\only<1>{\includegraphics[scale=0.6]{./presGraphics/scrum01}}
+\only<2>{\includegraphics[scale=0.6]{./presGraphics/scrum02}}
+\only<3>{\includegraphics[scale=0.6]{./presGraphics/scrum03}}
+\only<4>{\includegraphics[scale=0.6]{./presGraphics/scrum}}
+\caption{\url{http://www.plazz-entertainment.com/wp-content/uploads/2013/07/flow.png}}
+\end{figure}
+%--------------------------------------------------------------------------
+\end{frame}
+
+\begin{frame}
+%-------------------- Wo muss QA betrieben werden ?------------------------
+\frametitle{QA ja, aber wo?}
+\begin{block}<1->{\color<4->{red}{nach dem Sprint}}
+	\invisible<-2>{
+		nicht Möglich da: 
+		\begin{itemize}
+			\item nach einem Sprint ein fertiges Inkrement vorhanden sein muss
+		\end{itemize}
+	}
+\end{block}
+
+\begin{block}<2->{\color<6->{green}{Wärend des Sprintes}}
+	\invisible<-4>{
+		nach den Regeln von Scrum möglich
+	}
+\end{block}
+\only<5>{}	% damit gestoppt wird bevor es zur nächsten Folie geht
+%--------------------------------------------------------------------------
+\end{frame}
+
+\begin{frame}
+%---------------------- Ansprüche an das Testen ---------------------------
+\frametitle{Testen}
+\begin{block}{Ansprüche an das Testen / den Tester}
+	\begin{itemize}
+		\item testfähiger Code kann erst ab dem 3. Tag erwartet werden
+		\begin{itemize}
+			\item Testfälle definieren, bzw Vorbereitung der Tests an den ersten Tagen
+		\end{itemize}
+		\item das Sprintziel soll nicht gefärdet werden: schnelles Testen
+		\begin{itemize}
+			\item automatisiert
+		\end{itemize}
+	\end{itemize}
+\end{block}
+\begin{block}{Gefahren wenn man Testen}
+	\begin{itemize}
+		\item Viel Code in letzter Minute fertigstellen, fürt zu "keine Zeit für QA"
+	\end{itemize}
+\end{block}
+%--------------------------------------------------------------------------
+\end{frame}
+
+\begin{frame}
+%---------------- Beispiel von Testen in einem Sprint ---------------------
+\frametitle{QA in einem Sprint}
+\begin{figure}
+	\includegraphics[scale=0.6]{./presGraphics/sprintQA}
+	\caption{\url{http://www.uploads.pnsqc.org/2013/papers/t-024_Wysopal_paper.pdf}, Seite 9}
+\end{figure}
+%--------------------------------------------------------------------------
+\end{frame}
+
+\end{document}
